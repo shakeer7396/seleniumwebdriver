@@ -114,9 +114,49 @@ Some of the important points are
 	
 
 		--   Round-8 ------	
+		
 	**Already fetched once the repo url again you want to fetch 
+	
 	-> First check git remote --verbose   (There shows urls)
 	-> Just change small in previous one add 
 	-> git remote set-url origin "https://github.com/shakeer7396/seleniumwebdriver.git"
+	-> git push origin master  (then working properly)
 	
+	
+		--   Round-9 ------	
+		
+	-> This type of error is came in your command promt git bash while pushing the code
+	-> Do only one thing for this err solution copy below link and paste in browser and select middle option then gave access
+	-> https://github.com/shakeer7396/seleniumwebdriver/security/secret-scanning/unblock-secret/2o3QDDK5cMHBN5BcM0cdHyOeKyO
+	-> Above link given itself in this error
+	-> Again push the code error resolved
+	
+	** error: GH013: Repository rule violations found for refs/heads/master.
+remote:
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote:
+remote:     - Push cannot contain secrets
+remote:
+remote:
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:
+remote:
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: b341f3b7c77e036aae3a48501875cf28a2d6f7c0
+remote:            path: Details.txt:79
+remote:          - commit: ae2918ac3c1c96e0f3a5ccc628f56c04c6f9b12a
+remote:            path: Notes.txt:79
+remote:
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/shakeer7396/seleniumwebdriver/security/secret-scanning/unblock-secret/2o3QDDK5cMHBN5BcM0cdHyOeKyO
+remote:
+remote:
+remote:
+To https://github.com/shakeer7396/seleniumwebdriver.git
+ ! [remote rejected] master -> master (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/shakeer7396/seleniumwebdriver.git'
 	
