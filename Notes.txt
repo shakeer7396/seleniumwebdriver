@@ -7,10 +7,12 @@ Some of the important points are
 2. Right click on folder it shows git bash here then click first time you add this file then you create local repository for this file 
 
 --   Round-1 ------
+
 	* git init (Create new local Repository)
 	-> It creats empty local repository with location url wit .git extension
 	
 	1. Provide user info to git repo. (one time) starting
+	
 	-> git config --global user.name "shaikshakeerss123"
 	-> git config --global user.email "shaikshakeerss123@gmail.com"
 	-> git status -> It will show untracked files status
@@ -18,16 +20,21 @@ Some of the important points are
 --   Round-2 ------	
 
 	2. Adding files/folders to staging/indexing
+	
 	-> git add -A 	-->Adding all files & folders going into staging -> It means checking place anything wrong U can change there no problem
 	-> git add filename		->Adding single file with name
 	-> git add *.java		->Adding all java into staging
 	-> git add foldername	->Adding single folder with name
+
 	
 	3. Commit the code into Local(git) repository 
+	
 	-> git commit -m "commit message"		->Its storing all files in local repo
 	-> git status 		->It shows working tree clean 
+
 	
 	4. Connect local repo with remote repo (one time only)
+	
 	-> First open github and login then create a new repository with same file name what is in the eclipse put it public
 	-> It creates empty github repo and generates Url for this repository you copy this and paste into comand it connects local repo
 	
@@ -39,25 +46,30 @@ Some of the important points are
 	 generate new token then select all fields below then click generate copy this token and paste into signup token field and click
 	 -> Then all files going to remote repo its done
 	 
-*********************Github shows some issue while pushing when change git hub account***********************************
+**************** Github shows some issue while pushing when change git hub account **********************************
 1. So you go to Credential manager in below search option in laptop window then go to window credentials there
  delete previous github details all Then come again git bash and push
+ 
  
 --   Round-2 ------
 
 * adding, deleting files, and code in eclipse work place use below commands only
+
 1. git add -A
 2. git commit -m "Message"
 3. git push origin master
+
 
 --   Round-3 ------
 
 1. if you want to add direct from github first full pull then add and push from your side
 	-> git pull "https://github.com/shaikshakeerss123/Demo1.git" 		-> Pulling code from github to eclipse
 	
+	
 --   Round-4 ------	
 
 * Clone new repository to local system (In company already project there have some changes then do this)
+
 	-> First Create one new folder where you want to kept then open git bash that location then use below commands
 	-> git clone "https://github.com/noorgangavaram/AutomationNopcommerce.git"
 	-> Its all data copied into this folder then open this folder into your eclipse works space go on work 
@@ -65,9 +77,11 @@ Some of the important points are
 	-> After working you want to store your git then same first to end process
 	-> In company seperate branches there then push personal to main
 	
+	
 	--   Round-5 ------	
 
 ** Direct adding update code or files into existing github repository using eclipse 
+
 	-> Right click on folder Teams option showing hover it then click commit 
 	-> When commit option is not showing it shows apply path and share means your github remote repository link 
 	is breaking with local git repository then you click share it shows Configure Git Repository heading its 
@@ -86,7 +100,9 @@ Some of the important points are
 ** Next
 
  	--   Round-7 ------	
+ 	
  **	Changing Branch name globallay with git bash commands
+ 
  	->git init (Create new local Repository)
 	-> It creats empty local repository with location url wit .git extension
 	-> git status checking branch name
@@ -96,13 +112,11 @@ Some of the important points are
 	-> Automatically it changed to main but previous one is still working with master no issue
 	-> Same you want to change main to master with same file, It still working main but again creating new file its changed master
 	
-<<<<<<< HEAD
+
 		--   Round-8 ------	
 	**Already fetched once the repo url again you want to fetch 
 	-> First check git remote --verbose   (There shows urls)
 	-> Just change small in previous one add 
 	-> git remote set-url origin "https://github.com/shakeer7396/seleniumwebdriver.git"
 	
-=======
->>>>>>> parent of ae2918a (sorry)
 	
