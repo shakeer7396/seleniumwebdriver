@@ -1,0 +1,42 @@
+Wait Commands
+----------
+Synchronization
+------- 
+* When running the multiple Urls its execute more fast then one another one, so not opened another Url so Throughs error
+* These exceptions are 
+a) NoSuchElementException:
+	->Locator is correct but when execution that element is not available in the web page, It is Synchronization problem
+b) ElementNotFoundException
+	->When ever your locator is not matching or in-correct
+	
+
+* Thread.sleep() is not a WebDriver command it is a java program command
+	--> Advantages :- easy to use
+	--> Disadvantages :- 
+	1. If the time is not sufficient then you will get exception
+	2. It will wait for maximum time out. this will reduce the performance of automation script.
+	3. multiple times we need to write, we use so automation script also running slow
+
+* WebDriver wait methods are 2 types :- 1) implicit wait		2) explicit wait/fluent wait
+
+ 1) implicit wait 
+ 	-> driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); Its limit time 10sec
+ 	-----------Advantages----------------
+ 	-> single time/one statement
+ 	-> It will not wait till maximum time if the element is available
+ 	-> Applicable for all the elements
+ 	-> Easy to use
+ 	
+ 	-------------Disadvantages-----------------
+ 	-> If the time is not sufficient then you will get exception
+
+ 2) explicit wait/fluent wait
+ 	-> declaration
+ 	-> use
+ 	These two are main conditions for explicit wait
+ 	-----------Adv---------
+ 	-> Conditional based it will work more effectively
+ 	-> Finding element in inclusive(for some conditions)
+ 	-> It will wait condition to be true, then consider the time
+ 	-> We need to write multiple statements for multiple elements
+ 

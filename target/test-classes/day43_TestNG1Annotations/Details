@@ -1,0 +1,77 @@
+Annotations
+--------------
+
+@Test ,is using for validation
+@BeforeMethod
+@AfterMethod
+
+@BeforeClass
+@AfterClass
+
+@BeforeTest
+@AfterTest
+
+@BeforeSuite
+@AfterSuite
+
+TC1
+----
+1) Login	--> @BeforeMethod is using there because  --Pre requisite
+2) Search	--> @Test Its main test functionality
+3) Logout	--> @AfterMethod  because every time executing after the functionality, its came 2 times execute once --Exit criteria
+4) Login	--> @
+5) Adv search -> @Test Its also main test functionality
+6) Logout	--> @
+
+
+TC2
+-----
+1)Login		-->@BeforeClass		--There login can executes only once Before the test in the class
+2)Search	-->@Test
+3)advSearch -->@Test
+4)Logout	-->@AfterClass		--There logout can executes only once After the test in the class
+//All the Test will be part of the class, class contains the test methods.
+
+//Above 2 types of annotations are use only in class level only single class is enough
+//But  Below 2 types of annotations are use more test cases atleast 2 so we have Xml
+
+Xml
+-------
+<suite name="suite">
+<test name ="Test1">
+<classes>
+<class name ="day43" />
+</classes>
+</test>
+
+<test name ="Test2">
+<classes>
+<class name ="day44" />
+</classes>
+</test>
+</suite>
+
+**Annotations will control order of execution.and Annotations decide when to execute those methods
+**Annotations will participate only in execution not in results
+
+
+Assertions Types 
+----------------------
+* Assertions are multiple types main they are 2 Kinds
+1) Hard Assertions
+2) Soft Assertions
+
+
+Hard assertions 
+----
+we can access from "Assert" class
+methods are static
+* If hard assertions failed then rest of the statements will not be executed.
+
+
+Soft Assertions
+------
+we can access through "SoftAssert" object
+SoftAssert sa = new SoftAssert();
+sa.assertTrue();
+ if soft assertion got failed then rest of the statement still execute.
